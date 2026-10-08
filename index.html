@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1>Интерактивный калькулятор</h1>
+
+    <script>
+        let a = Number(prompt("Введите первое число:"));
+        let b = Number(prompt("Введите второе число:"));
+        let operation = prompt("Выберите: +, -, *, /");
+
+        switch (operation) {
+            case "+":
+                alert("Результат: " + (a + b));
+                break;
+            case "-":
+                alert("Результат: " + (a - b));
+                break;
+            case "*":
+                alert("Результат: " + (a * b));
+                break;
+            case "/":
+                if (b === 0) {
+                    alert("Делить на ноль нельзя");
+                } else {
+                    alert("Результат: " + (a / b));
+                }
+                break;
+            default:
+                alert("Неизвестная операция");
+        }
+    </script>
+</body>
+</html>
